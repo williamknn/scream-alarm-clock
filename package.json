@@ -1,0 +1,34 @@
+{
+  "name": "ScreamAlarmClock",
+  "version": "1.0.0",
+  "author": "William Kennedy",
+  "description": "Scream Alarm Clock - Study Ionic App",
+  "license": "MIT",
+  "main": "www/index.html",
+  "scripts": {
+    "build-ios": "ionic platform rm ios && ionic platform add ios && ionic build ios",
+    "build-android": "ionic platform rm android && ionic platform add android && ionic build android"
+  },
+  "dependencies": {
+    "angular-material-time-picker": "^1.0.6",
+    "gulp": "^3.5.6",
+    "gulp-concat": "^2.2.0",
+    "gulp-minify-css": "^0.3.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^2.0.4"
+  },
+  "devDependencies": {
+    "bower": "^1.3.3",
+    "gulp-util": "^2.2.14",
+    "shelljs": "^0.3.0"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-whitelist",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-console",
+    "cordova-plugin-device",
+    "cordova-plugin-splashscreen",
+    "ionic-plugin-keyboard"
+  ],
+  "cordovaPlatforms": []
+}

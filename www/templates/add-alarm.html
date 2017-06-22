@@ -1,0 +1,22 @@
+<ion-view view-title="Criar alarme">
+  <ion-content>
+    <div class="active-alarms">
+        <div class="active-alarms__create">
+            <div class="card">
+                <div class="item item-text-wrap">
+                    <h2 class="text-center">{{ data.new_date | date: 'HH:mm' }}</h2>
+                </div>
+            </div>
+            <ion-list>
+                <ion-item ng-click="">
+                    Horário: <span class="hour pull-right">{{ data.new_date | date: 'HH:mm' }}</span>
+                </ion-item>
+                <ion-item>
+                    Dias da semana: <span class="hour pull-right"></span>
+                </ion-item>
+            </ion-list>
+
+        </div>
+    </div>
+  </ion-content>
+</ion-view>

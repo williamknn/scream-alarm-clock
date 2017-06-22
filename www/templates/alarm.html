@@ -1,0 +1,34 @@
+<ion-view view-title="Screamin' Alarm Clock" ng-init="init()">
+  <ion-content>
+    <div class="main-alarm">
+        <ds-widget-clock theme="dark" show-secs="false" digital-format="'HH:mm'"></ds-widget-clock>
+    </div>
+    <div class="active-alarms">
+        <div class="card welcome">
+            <h4>
+                Olá, {{ user.email }}
+            </h4>
+            <div class="pull-right">
+                <a href="#/app/editProfile">Editar perfil</a>
+            </div>
+        </div>
+        <div class="active-alarms__list">
+            <div class="list card">
+                <div class="item item-divider">
+                    Alarmes ativos
+                </div>
+
+                <a href="#" class="item item-icon-left">
+                    <i class="icon ion-clock"></i>
+                    Alarme 1
+                </a>
+
+            </div>
+
+            <a class="button button-full button-balanced create-alarm-btn" href="#/app/alarm/add">
+                Criar Alarme
+            </a>
+        </div>
+    </div>
+  </ion-content>
+</ion-view>
